@@ -9,6 +9,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": "20.11.0"
+  }
   "dependencies": {
     "@ai-sdk/amazon-bedrock": "^0.0.9",
     "@aws-amplify/ui-react": "^6.1.13",
