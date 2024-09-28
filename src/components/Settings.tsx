@@ -35,14 +35,14 @@ export function Settings({ settings, handleSettings }: Props) {
             <SelectValue placeholder="Select a framework" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="ai">
-              <div className="flex items-start gap-3 text-muted-foreground">
-                <p>AI SDK</p>
-              </div>
-            </SelectItem>
             <SelectItem value="langchain">
               <div className="flex items-start gap-3 text-muted-foreground">
                 <p>LangChain</p>
+              </div>
+            </SelectItem>
+            <SelectItem value="ai">
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <p>AI SDK</p>
               </div>
             </SelectItem>
           </SelectContent>
@@ -63,12 +63,6 @@ export function Settings({ settings, handleSettings }: Props) {
             <SelectValue placeholder="Select a model" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="claude-3-5-sonnet">
-              <div className="flex items-start gap-3 text-muted-foreground">
-                <Rabbit className="size-5" />
-                <p>Claude 3.5 Sonnet</p>
-              </div>
-            </SelectItem>
             <SelectItem value="claude-3-sonnet">
               <div className="flex items-start gap-3 text-muted-foreground">
                 <Bird className="size-5" />
@@ -79,6 +73,12 @@ export function Settings({ settings, handleSettings }: Props) {
               <div className="flex items-start gap-3 text-muted-foreground">
                 <Turtle className="size-5" />
                 <p>Claude 3 Haiku</p>
+              </div>
+            </SelectItem>
+            <SelectItem value="claude-3-5-sonnet">
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <Rabbit className="size-5" />
+                <p>Claude 3.5 Sonnet</p>
               </div>
             </SelectItem>
           </SelectContent>
