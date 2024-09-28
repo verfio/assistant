@@ -31,8 +31,8 @@ export type Settings = {
 };
 
 const defaultSettings: Settings = {
-  framework: "ai",
-  model: "claude-3-5-sonnet",
+  framework: "langchain",
+  model: "claude-3-sonnet",
   temperature: 0.5,
   system: "You are a helpful, respectful and honest assistant.",
 };
