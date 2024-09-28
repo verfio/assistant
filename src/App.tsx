@@ -19,9 +19,9 @@ import {
   TooltipTrigger,
 } from "./components/ui/tooltip";
 
-export type Framework = "ai" | "langchain";
+export type Framework = "langchain" | "ai";
 
-export type Model = "claude-3-5-sonnet" | "claude-3-sonnet" | "claude-3-haiku";
+export type Model = "claude-3-sonnet" | "claude-3-haiku" | "claude-3-5-sonnet";
 
 export type Settings = {
   framework: Framework;
